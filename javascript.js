@@ -8,7 +8,7 @@
 
 // a = 100;
 // while(a >= 1){
-//     if (a % 2 === 0) {
+//     if (a % 2 == 1) {
 //         console.log("Genap: " + a);
 //      }
       
