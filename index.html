@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script>
+        //for
+        function calculateChangeFor(totalBelanja, uangBayar) {
+            let kembalian = uangBayar - totalBelanja;
 
+            for (let i = 0; i < kembalian; i += 50) {
+                if (i >= 50) {
+                    kembalian += 50;
+                    kembalian -= i;
+                    break;
+                }
+            }
 
+            return kembalian;
+        }
 
+        //while
+        let totalBelanja = 19212;
+        let uangBayar = 20000;
+        let kembalian = calculateChangeFor(totalBelanja, uangBayar);
+        console.log("Kembalian:", kembalian);
 
+        function calculateChangeWhile(totalBelanja, uangBayar) {
+            let kembalian = uangBayar - totalBelanja;
 
-    <script src="javascript.js"></script>
+            let i = 0;
+            while (i < kembalian) {
+                if (i >= 50) {
+                    kembalian += 50;
+                    kembalian -= i;
+                    break;
+                }
+                i += 50;
+            }
+
+            return kembalian;
+        }
+
+        //do-while
+        let kembalianWhile = calculateChangeWhile(totalBelanja, uangBayar);
+        console.log("Kembalian (while):", kembalianWhile);
+        function calculateChangeDoWhile(totalBelanja, uangBayar) {
+            let kembalian = uangBayar - totalBelanja;
+
+            let i = 0;
+            do {
+                if (i >= 50) {
+                    kembalian += 50;
+                    kembalian -= i;
+                    break;
+                }
+                i += 50;
+            } while (i < kembalian);
+
+            return kembalian;
+        }
+
+        let kembalianDoWhile = calculateChangeDoWhile(totalBelanja, uangBayar);
+        console.log("Kembalian (do-while):", kembalianDoWhile);
+
+    </script>
 </body>
+
 </html>
