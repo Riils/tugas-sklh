@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <script>
-        //for
+    <script src="javascript.js">
+         //for
         function calculateChangeFor(totalBelanja, uangBayar) {
             let kembalian = uangBayar - totalBelanja;
 
@@ -34,7 +34,7 @@
             let kembalian = uangBayar - totalBelanja;
 
             let i = 0;
-            while (i < kembalian) {
+            while (i < kembalian) 
                 if (i >= 50) {
                     kembalian += 50;
                     kembalian -= i;
@@ -43,11 +43,11 @@
                 i += 50;
             }
 
-            return kembalian;
-        }
+            <!-- return kembalian; -->
+        
 
         //do-while
-        let kembalianWhile = calculateChangeWhile(totalBelanja, uangBayar);
+         let kembalianWhile = calculateChangeWhile(totalBelanja, uangBayar);
         console.log("Kembalian (while):", kembalianWhile);
         function calculateChangeDoWhile(totalBelanja, uangBayar) {
             let kembalian = uangBayar - totalBelanja;
@@ -71,4 +71,4 @@
     </script>
 </body>
 
-</html>
+</html> 

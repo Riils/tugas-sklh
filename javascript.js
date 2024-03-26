@@ -129,13 +129,17 @@
 
 
 
- let angka = 5;
- let faktorial = 1;
- let i = 1;
+//  let angka = 5;
+//  let faktorial = 1;
+//  let i = 1;
 
- do {
-    faktorial *= i;
-    i++
- } while (i <= angka);
+//  do {
+//     faktorial *= i;
+//     i++
+//  } while (i <= angka);
 
- console.log ("Faktorial dari " + angka + " adalah: " + faktorial);
+//  console.log ("Faktorial dari " + angka + " adalah: " + faktorial);
+
+
+
+
